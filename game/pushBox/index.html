@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+
+        #game {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /*每个元素的公共属性*/
+        #game .item {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background-size: 100% 100%;
+        }
+
+        #game .player {
+            background-image: url("./imgs/player.png");
+        }
+
+        #game .box {
+            background-image: url("./imgs/box.png");
+        }
+
+        #game .wall {
+            background-image: url("./imgs/wall.jpg");
+        }
+
+        #game .over-box {
+            background-image: url("./imgs/over_box.png");
+        }
+
+        #game .correct {
+            border: 1px solid pink;
+            /*这个属性还是非常有用的*/
+            /*weight = 内容 + padding + border*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<!--游戏容器-->
+<div id="game">
+
+</div>
+
+<script src="module/index.js" type="module"></script>
+<!--使用模块化 import路径需要写完整，因为这个项目没有进行webpack进行相关内容的配置，如果想省略文件的后缀（后续解决）-->
+</body>
+</html>
